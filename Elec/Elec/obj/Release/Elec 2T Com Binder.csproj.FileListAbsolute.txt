@@ -1,0 +1,9 @@
+D:\личный\программирование\C#\Elec\Elec\bin\Release\Elec 2T Com Binder.exe
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.AssemblyReference.cache
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec.Main.resources
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec.Controls.FormPattern.resources
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec.Properties.Resources.resources
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.GenerateResource.cache
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.CoreCompileInputs.cache
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.Fody.CopyLocal.cache
+D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.exe
