@@ -7,3 +7,12 @@ D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2
 D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.CoreCompileInputs.cache
 D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.Fody.CopyLocal.cache
 D:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.exe
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.AssemblyReference.cache
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec.Main.resources
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec.Controls.FormPattern.resources
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec.Properties.Resources.resources
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.GenerateResource.cache
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.CoreCompileInputs.cache
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.exe
+E:\личный\программирование\C#\Elec\Elec\bin\Release\Elec 2T Com Binder.exe
+E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.Fody.CopyLocal.cache

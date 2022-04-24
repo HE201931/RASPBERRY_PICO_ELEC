@@ -1,7 +1,6 @@
 ﻿using Elec.Controls;
 using System;
 using System.IO.Ports;
-using System.Text;
 using System.Windows.Forms;
 
 /* 
@@ -62,25 +61,25 @@ namespace Elec
             comPortHandler.Read(byteBuffer, 0, intBuffer);
             comPortHandler.DiscardInBuffer();
             comPortHandler.DiscardOutBuffer();
-            new PayloadHelper((byte[])byteBuffer.Clone());
+            new PayloadReceiver(byteBuffer);
         }
 
         private void sendPortGuna2Button_Click(object sender, EventArgs e)
         {
             try
             {
-                byte[] textByte = Encoding.UTF8.GetBytes(textComGuna2TextBox.Text);
-                byte[] fullPayload = new byte[textByte.Length + 1];
-                fullPayload[0] = (byte)PAYLOAD_HELPER.SEND_TEXT;
-                Array.Copy(textByte, 0, fullPayload, 1, textByte.Length);
-                comPortHandler.Write(fullPayload, 0, fullPayload.Length);
-                Helpers.WriteLog("Successfully text sent to com port !", logsRichTextBox, Helpers.SUCCESS_COLOR);
+                new PayloadSender(PAYLOAD_HELPER.SEND_TEXT, textComGuna2TextBox.Text, comPortHandler);
             }
             catch (Exception ex)
             {
                 isPortComConnected = false;
                 Helpers.WriteLog("Error while sending text to connected com port : " + ex.ToString(), logsRichTextBox, Helpers.ERROR_COLOR);
             }
+        }
+
+        private void getCurrentDistanceGuna2Button_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void label4_MouseDown(object sender, MouseEventArgs e)
@@ -93,6 +92,11 @@ namespace Elec
         {
             comPortHandler.Close();
             this.Close();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
