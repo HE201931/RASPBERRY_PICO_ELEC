@@ -1,0 +1,14 @@
+https://wokwi.com/projects/329177783830839890
+
+SRC :
+
+https://www.carnetdumaker.net/articles/mesurer-une-distance-avec-un-capteur-ultrason-hc-sr04-et-une-carte-arduino-genuino/
+https://www.carnetdumaker.net/articles/utiliser-un-afficheur-7-segments-avec-une-carte-arduino-genuino/
+https://www.arduino.cc/reference/en/language/functions/bits-and-bytes/bitread/
+https://forum.arduino.cc/t/convert-a-float-to-a-series-of-bytes/176165
+
+https://www.tomshardware.com/how-to/program-raspberry-pi-pico-with-arduino-ide
+
+https://www.youtube.com/watch?v=1cQqYJCFm94
+https://www.youtube.com/watch?v=qdFjmaaB2Lo
+https://www.youtube.com/watch?v=ztYQ6IRWi0Y

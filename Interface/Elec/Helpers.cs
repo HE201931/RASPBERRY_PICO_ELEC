@@ -14,7 +14,8 @@ namespace Elec
         GET_DISTANCE_CAPTED =   0,
         SEND_TEXT =             1,
         GET_LIMIT_DISTANCE =    2,
-        SET_LIMIT_DISTANCE =    3
+        SET_LIMIT_DISTANCE =    3,
+        EXCEPTION =             4
     }
 
     internal class Helpers

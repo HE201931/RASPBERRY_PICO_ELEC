@@ -24,6 +24,11 @@ namespace Elec
                 comPortGuna2ComboBox.Items.Add(port);   
             }
             isPortComConnected = false;
+
+            foreach (PAYLOAD_HELPER pAYLOAD_HELPER in Enum.GetValues(typeof(PAYLOAD_HELPER)))
+            {
+                payloadGuna2ComboBox.Items.Add(pAYLOAD_HELPER.ToString());
+            }
         }
         private void comPortGuna2Button_Click(object sender, EventArgs e)
         {
@@ -67,8 +72,31 @@ namespace Elec
         private void sendPortGuna2Button_Click(object sender, EventArgs e)
         {
             try
-            {
-                new PayloadSender(PAYLOAD_HELPER.SEND_TEXT, textComGuna2TextBox.Text, comPortHandler);
+            {/*        GET_DISTANCE_CAPTED =   0,
+        SEND_TEXT =             1,
+        GET_LIMIT_DISTANCE =    2,
+        SET_LIMIT_DISTANCE =    3*/
+
+                switch (payloadGuna2ComboBox.Text) 
+                {
+                    case "SEND_TEXT":
+                        new PayloadSender(PAYLOAD_HELPER.SEND_TEXT, textComGuna2TextBox.Text, comPortHandler);
+                        break;
+
+                    case "GET_DISTANCE_CAPTED":
+                        break;
+
+                    case "GET_LIMIT_DISTANCE":
+                        new PayloadSender(PAYLOAD_HELPER.GET_LIMIT_DISTANCE, "", comPortHandler);
+                        break;
+
+                    case "SET_LIMIT_DISTANCE":
+                        new PayloadSender(PAYLOAD_HELPER.SET_LIMIT_DISTANCE, textComGuna2TextBox.Text, comPortHandler);
+                        break;
+
+                    default:
+                        break;
+                }
             }
             catch (Exception ex)
             {
@@ -95,6 +123,11 @@ namespace Elec
         }
 
         private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

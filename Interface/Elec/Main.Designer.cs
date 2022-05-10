@@ -47,6 +47,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.payloadGuna2ComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2GroupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,15 +65,11 @@
             // 
             this.closeGuna2Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeGuna2Button.Animated = true;
-            this.closeGuna2Button.CheckedState.Parent = this.closeGuna2Button;
-            this.closeGuna2Button.CustomImages.Parent = this.closeGuna2Button;
             this.closeGuna2Button.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.closeGuna2Button.ForeColor = System.Drawing.Color.White;
-            this.closeGuna2Button.HoverState.Parent = this.closeGuna2Button;
             this.closeGuna2Button.Location = new System.Drawing.Point(1144, 0);
             this.closeGuna2Button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closeGuna2Button.Name = "closeGuna2Button";
-            this.closeGuna2Button.ShadowDecoration.Parent = this.closeGuna2Button;
             this.closeGuna2Button.Size = new System.Drawing.Size(32, 32);
             this.closeGuna2Button.TabIndex = 3;
             this.closeGuna2Button.Text = "╳";
@@ -91,15 +90,11 @@
             // comPortGuna2Button
             // 
             this.comPortGuna2Button.Animated = true;
-            this.comPortGuna2Button.CheckedState.Parent = this.comPortGuna2Button;
-            this.comPortGuna2Button.CustomImages.Parent = this.comPortGuna2Button;
             this.comPortGuna2Button.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.comPortGuna2Button.ForeColor = System.Drawing.Color.White;
-            this.comPortGuna2Button.HoverState.Parent = this.comPortGuna2Button;
             this.comPortGuna2Button.Location = new System.Drawing.Point(4, 138);
             this.comPortGuna2Button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comPortGuna2Button.Name = "comPortGuna2Button";
-            this.comPortGuna2Button.ShadowDecoration.Parent = this.comPortGuna2Button;
             this.comPortGuna2Button.Size = new System.Drawing.Size(286, 36);
             this.comPortGuna2Button.TabIndex = 7;
             this.comPortGuna2Button.Text = "Connect !";
@@ -113,22 +108,18 @@
             this.textComGuna2TextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textComGuna2TextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textComGuna2TextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textComGuna2TextBox.DisabledState.Parent = this.textComGuna2TextBox;
             this.textComGuna2TextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textComGuna2TextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.textComGuna2TextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textComGuna2TextBox.FocusedState.Parent = this.textComGuna2TextBox;
             this.textComGuna2TextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textComGuna2TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.textComGuna2TextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textComGuna2TextBox.HoverState.Parent = this.textComGuna2TextBox;
-            this.textComGuna2TextBox.Location = new System.Drawing.Point(6, 264);
+            this.textComGuna2TextBox.Location = new System.Drawing.Point(6, 325);
             this.textComGuna2TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textComGuna2TextBox.Name = "textComGuna2TextBox";
             this.textComGuna2TextBox.PasswordChar = '\0';
             this.textComGuna2TextBox.PlaceholderText = "";
             this.textComGuna2TextBox.SelectedText = "";
-            this.textComGuna2TextBox.ShadowDecoration.Parent = this.textComGuna2TextBox;
             this.textComGuna2TextBox.Size = new System.Drawing.Size(294, 36);
             this.textComGuna2TextBox.TabIndex = 9;
             // 
@@ -160,15 +151,11 @@
             // sendPortGuna2Button
             // 
             this.sendPortGuna2Button.Animated = true;
-            this.sendPortGuna2Button.CheckedState.Parent = this.sendPortGuna2Button;
-            this.sendPortGuna2Button.CustomImages.Parent = this.sendPortGuna2Button;
             this.sendPortGuna2Button.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.sendPortGuna2Button.ForeColor = System.Drawing.Color.White;
-            this.sendPortGuna2Button.HoverState.Parent = this.sendPortGuna2Button;
-            this.sendPortGuna2Button.Location = new System.Drawing.Point(6, 310);
+            this.sendPortGuna2Button.Location = new System.Drawing.Point(6, 371);
             this.sendPortGuna2Button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sendPortGuna2Button.Name = "sendPortGuna2Button";
-            this.sendPortGuna2Button.ShadowDecoration.Parent = this.sendPortGuna2Button;
             this.sendPortGuna2Button.Size = new System.Drawing.Size(294, 36);
             this.sendPortGuna2Button.TabIndex = 12;
             this.sendPortGuna2Button.Text = "Send !";
@@ -187,6 +174,7 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Logs:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comPortGuna2ComboBox
             // 
@@ -197,15 +185,11 @@
             this.comPortGuna2ComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.comPortGuna2ComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comPortGuna2ComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comPortGuna2ComboBox.FocusedState.Parent = this.comPortGuna2ComboBox;
             this.comPortGuna2ComboBox.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.comPortGuna2ComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.comPortGuna2ComboBox.HoverState.Parent = this.comPortGuna2ComboBox;
             this.comPortGuna2ComboBox.ItemHeight = 30;
-            this.comPortGuna2ComboBox.ItemsAppearance.Parent = this.comPortGuna2ComboBox;
             this.comPortGuna2ComboBox.Location = new System.Drawing.Point(88, 46);
             this.comPortGuna2ComboBox.Name = "comPortGuna2ComboBox";
-            this.comPortGuna2ComboBox.ShadowDecoration.Parent = this.comPortGuna2ComboBox;
             this.comPortGuna2ComboBox.Size = new System.Drawing.Size(203, 36);
             this.comPortGuna2ComboBox.TabIndex = 14;
             // 
@@ -239,7 +223,6 @@
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(6, 38);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
             this.guna2GroupBox1.Size = new System.Drawing.Size(294, 187);
             this.guna2GroupBox1.TabIndex = 17;
             this.guna2GroupBox1.Text = "Settings";
@@ -264,15 +247,12 @@
             this.baudsGuna2TextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.baudsGuna2TextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.baudsGuna2TextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.baudsGuna2TextBox.DisabledState.Parent = this.baudsGuna2TextBox;
             this.baudsGuna2TextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.baudsGuna2TextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.baudsGuna2TextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.baudsGuna2TextBox.FocusedState.Parent = this.baudsGuna2TextBox;
             this.baudsGuna2TextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.baudsGuna2TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.baudsGuna2TextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.baudsGuna2TextBox.HoverState.Parent = this.baudsGuna2TextBox;
             this.baudsGuna2TextBox.Location = new System.Drawing.Point(88, 92);
             this.baudsGuna2TextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.baudsGuna2TextBox.Name = "baudsGuna2TextBox";
@@ -280,7 +260,6 @@
             this.baudsGuna2TextBox.PlaceholderText = "";
             this.baudsGuna2TextBox.SelectedText = "";
             this.baudsGuna2TextBox.SelectionStart = 6;
-            this.baudsGuna2TextBox.ShadowDecoration.Parent = this.baudsGuna2TextBox;
             this.baudsGuna2TextBox.Size = new System.Drawing.Size(203, 34);
             this.baudsGuna2TextBox.TabIndex = 18;
             // 
@@ -319,12 +298,59 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // payloadGuna2ComboBox
+            // 
+            this.payloadGuna2ComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.payloadGuna2ComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.payloadGuna2ComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.payloadGuna2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.payloadGuna2ComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.payloadGuna2ComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.payloadGuna2ComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.payloadGuna2ComboBox.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.payloadGuna2ComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.payloadGuna2ComboBox.ItemHeight = 30;
+            this.payloadGuna2ComboBox.Location = new System.Drawing.Point(6, 281);
+            this.payloadGuna2ComboBox.Name = "payloadGuna2ComboBox";
+            this.payloadGuna2ComboBox.Size = new System.Drawing.Size(294, 36);
+            this.payloadGuna2ComboBox.TabIndex = 20;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.label7.Location = new System.Drawing.Point(941, 38);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(231, 40);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "...";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes1.Location = new System.Drawing.Point(857, 38);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Ellipse;
+            this.guna2Shapes1.Size = new System.Drawing.Size(47, 40);
+            this.guna2Shapes1.TabIndex = 12;
+            this.guna2Shapes1.Text = "guna2Shapes1";
+            this.guna2Shapes1.Zoom = 80;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1180, 574);
+            this.Controls.Add(this.guna2Shapes1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.payloadGuna2ComboBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2GroupBox1);
@@ -370,6 +396,9 @@
         private System.Windows.Forms.Label label6;
         internal System.Windows.Forms.RichTextBox logsRichTextBox;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2ComboBox payloadGuna2ComboBox;
+        public System.Windows.Forms.Label label7;
+        public Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
     }
 }
 
