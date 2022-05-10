@@ -5,8 +5,8 @@
 This project aims to 
 * Fetch a distance from ultrasonic probe with a raspberry pico
 * send fetched distance to serial port and process data received
-* turn on/off some diodes depending on distance limit
-* set a distance limit
+* turn on/off some diodes depending on boundary distance
+* set a boundary distance
 
 ## Languages used
 
