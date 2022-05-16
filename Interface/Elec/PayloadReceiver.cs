@@ -15,6 +15,8 @@ namespace Elec
         private delegate PAYLOAD_HELPER AsyncPayloadParser(byte[] payload);
         private AsyncPayloadParser asyncPayloadParser;
         internal static uint currentDistanceLimit = 0;
+        internal string errorLog { get; set; }
+
         internal PayloadReceiver(byte[] payload) 
         {
             asyncPayloadParser = new AsyncPayloadParser(BeginPayloadParser);
@@ -25,8 +27,6 @@ namespace Elec
         {
             try
             {
-
-
                 PAYLOAD_HELPER payloadHelper = (PAYLOAD_HELPER)fullPayload[0];
 
                 byte[] payload = new byte[fullPayload.Length - 1];
@@ -50,6 +50,12 @@ namespace Elec
                         limitDistance |= (uint)payload[2] << 8;
                         limitDistance |= (uint) payload[3];
                         currentDistanceLimit = limitDistance;
+
+                        Program.main.Invoke((MethodInvoker)(() =>
+                        {
+                            Program.main.label8.Text = $"{limitDistance.ToString()} mm";
+                        }));
+
                         break;
 
                     case PAYLOAD_HELPER.GET_DISTANCE_CAPTED:
@@ -72,8 +78,9 @@ namespace Elec
                 }
                 return payloadHelper;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                errorLog = ex.ToString();
                 return PAYLOAD_HELPER.EXCEPTION;
             }
         }
@@ -81,7 +88,10 @@ namespace Elec
         private void EndPayloadParser(IAsyncResult ar) 
         {
             PAYLOAD_HELPER payloadHelper = asyncPayloadParser.EndInvoke(ar);
-            /*if(payloadHelper != PAYLOAD_HELPER.GET_DISTANCE_CAPTED || payloadHelper != PAYLOAD_HELPER.GET_LIMIT_DISTANCE)
+
+           /* if(payloadHelper == PAYLOAD_HELPER.EXCEPTION)
+                Helpers.WriteLog("An error occured : " + errorLog, Program.main.logsRichTextBox, Helpers.ERROR_COLOR);
+            else
                 Helpers.WriteLog("Payload parsed : " + payloadHelper.ToString(), Program.main.logsRichTextBox, Helpers.SUCCESS_COLOR);*/
         }
     }

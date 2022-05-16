@@ -50,9 +50,14 @@
             this.payloadGuna2ComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.guna2GroupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // comPortHandler
@@ -141,10 +146,10 @@
             this.logsRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.logsRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logsRichTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logsRichTextBox.Location = new System.Drawing.Point(2, 2);
+            this.logsRichTextBox.Location = new System.Drawing.Point(2, 42);
             this.logsRichTextBox.Name = "logsRichTextBox";
             this.logsRichTextBox.ReadOnly = true;
-            this.logsRichTextBox.Size = new System.Drawing.Size(863, 465);
+            this.logsRichTextBox.Size = new System.Drawing.Size(863, 416);
             this.logsRichTextBox.TabIndex = 11;
             this.logsRichTextBox.Text = "";
             // 
@@ -163,18 +168,16 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.label3.Location = new System.Drawing.Point(307, 38);
+            this.label3.Location = new System.Drawing.Point(2, 2);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(543, 40);
+            this.label3.Size = new System.Drawing.Size(863, 40);
             this.label3.TabIndex = 13;
             this.label3.Text = "Logs:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comPortGuna2ComboBox
             // 
@@ -268,7 +271,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.label6.Location = new System.Drawing.Point(0, 554);
+            this.label6.Location = new System.Drawing.Point(6, 554);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(315, 15);
             this.label6.TabIndex = 18;
@@ -279,12 +282,13 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.panel1.Controls.Add(this.logsRichTextBox);
-            this.panel1.Location = new System.Drawing.Point(307, 84);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(307, 93);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(2);
-            this.panel1.Size = new System.Drawing.Size(867, 469);
+            this.panel1.Size = new System.Drawing.Size(867, 460);
             this.panel1.TabIndex = 19;
             // 
             // pictureBox1
@@ -317,14 +321,13 @@
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.label7.Location = new System.Drawing.Point(941, 38);
+            this.label7.Location = new System.Drawing.Point(218, 5);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(231, 40);
+            this.label7.Size = new System.Drawing.Size(643, 40);
             this.label7.TabIndex = 21;
             this.label7.Text = "...";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -332,15 +335,63 @@
             // guna2Shapes1
             // 
             this.guna2Shapes1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes1.Location = new System.Drawing.Point(857, 38);
+            this.guna2Shapes1.Location = new System.Drawing.Point(6, 3);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
             this.guna2Shapes1.Rotate = 0F;
             this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Ellipse;
-            this.guna2Shapes1.Size = new System.Drawing.Size(47, 40);
+            this.guna2Shapes1.Size = new System.Drawing.Size(42, 42);
             this.guna2Shapes1.TabIndex = 12;
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.Zoom = 80;
+            // 
+            // label8
+            // 
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.label8.Location = new System.Drawing.Point(10, 452);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(231, 40);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "...";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.label9.Location = new System.Drawing.Point(10, 412);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(231, 40);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Current max distance :";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.label10.Location = new System.Drawing.Point(55, 5);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(155, 40);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Distance measured:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.guna2Shapes1);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Location = new System.Drawing.Point(307, 38);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(865, 49);
+            this.panel2.TabIndex = 25;
             // 
             // Main
             // 
@@ -348,15 +399,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1180, 574);
-            this.Controls.Add(this.guna2Shapes1);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.payloadGuna2ComboBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.sendPortGuna2Button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textComGuna2TextBox);
@@ -368,10 +419,11 @@
             this.Padding = new System.Windows.Forms.Padding(3, 32, 3, 3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Elec 2T TEAM C";
-            this.Load += new System.EventHandler(this.Main_Load);
+            this.Shown += new System.EventHandler(this.Main_Shown);
             this.guna2GroupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,6 +451,10 @@
         private Guna.UI2.WinForms.Guna2ComboBox payloadGuna2ComboBox;
         public System.Windows.Forms.Label label7;
         public Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

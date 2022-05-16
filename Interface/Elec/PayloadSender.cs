@@ -13,6 +13,7 @@ namespace Elec
     {
         private delegate PAYLOAD_HELPER SendPayloadAsync(PAYLOAD_HELPER payloadType, object payload, SerialPort serialPort);
         private SendPayloadAsync sendPayloadAsync;
+
         internal PayloadSender(PAYLOAD_HELPER payloadType, object payload, SerialPort serialPort) 
         {
             sendPayloadAsync = new SendPayloadAsync(BeginPayloadSender);
@@ -54,7 +55,6 @@ namespace Elec
                     {
                         serialPort.Write(fullPayload, 0, fullPayload.Length);
                     }
-
                     break;
             }
             return payloadType;

@@ -16,3 +16,21 @@ E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2
 E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.exe
 E:\личный\программирование\C#\Elec\Elec\bin\Release\Elec 2T Com Binder.exe
 E:\личный\программирование\C#\Elec\Elec\obj\Release\Elec 2T Com Binder.csproj.Fody.CopyLocal.cache
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\bin\Release\Elec 2T Com Binder.exe
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.AssemblyReference.cache
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec.Main.resources
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec.Controls.FormPattern.resources
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec.Properties.Resources.resources
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.GenerateResource.cache
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.CoreCompileInputs.cache
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.Fody.CopyLocal.cache
+C:\Users\arsium\Desktop\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.exe
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\bin\Release\Elec 2T Com Binder.exe
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.AssemblyReference.cache
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec.Main.resources
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec.Controls.FormPattern.resources
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec.Properties.Resources.resources
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.GenerateResource.cache
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.CoreCompileInputs.cache
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.csproj.Fody.CopyLocal.cache
+C:\Users\Arsium\Documents\TMP\RASPBERRY_PICO_ELEC\Interface\Elec\obj\Release\Elec 2T Com Binder.exe

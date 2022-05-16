@@ -1,6 +1,7 @@
 ﻿using Elec.Controls;
 using System;
 using System.IO.Ports;
+using System.Threading;
 using System.Windows.Forms;
 
 /* 
@@ -27,7 +28,8 @@ namespace Elec
 
             foreach (PAYLOAD_HELPER pAYLOAD_HELPER in Enum.GetValues(typeof(PAYLOAD_HELPER)))
             {
-                payloadGuna2ComboBox.Items.Add(pAYLOAD_HELPER.ToString());
+                if(pAYLOAD_HELPER != PAYLOAD_HELPER.GET_DISTANCE_CAPTED && pAYLOAD_HELPER != PAYLOAD_HELPER.EXCEPTION)
+                    payloadGuna2ComboBox.Items.Add(pAYLOAD_HELPER.ToString());
             }
         }
         private void comPortGuna2Button_Click(object sender, EventArgs e)
@@ -72,19 +74,15 @@ namespace Elec
         private void sendPortGuna2Button_Click(object sender, EventArgs e)
         {
             try
-            {/*        GET_DISTANCE_CAPTED =   0,
-        SEND_TEXT =             1,
-        GET_LIMIT_DISTANCE =    2,
-        SET_LIMIT_DISTANCE =    3*/
-
+            {
                 switch (payloadGuna2ComboBox.Text) 
                 {
                     case "SEND_TEXT":
                         new PayloadSender(PAYLOAD_HELPER.SEND_TEXT, textComGuna2TextBox.Text, comPortHandler);
                         break;
 
-                    case "GET_DISTANCE_CAPTED":
-                        break;
+                    /*case "GET_DISTANCE_CAPTED":
+                        break;*/
 
                     case "GET_LIMIT_DISTANCE":
                         new PayloadSender(PAYLOAD_HELPER.GET_LIMIT_DISTANCE, "", comPortHandler);
@@ -105,11 +103,6 @@ namespace Elec
             }
         }
 
-        private void getCurrentDistanceGuna2Button_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label4_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -122,14 +115,8 @@ namespace Elec
             this.Close();
         }
 
-        private void Main_Load(object sender, EventArgs e)
+        private void Main_Shown(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
