@@ -12,3 +12,8 @@ This project aims to
 
 * C# .NET 4.8 (computer communication and data processing)
 * C/C++ (mostly C) on Raspberry Pico
+
+
+## Interface preview :
+
+![PIC](https://github.com/HE201931/RASPBERRY_PICO_ELEC/blob/main/IMG/8.png?raw=true)
