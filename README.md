@@ -10,7 +10,7 @@ This project aims to
 
 ## Languages used
 
-* C# .NET 4.8 (computer communication and data processing)
+* C# .NET 4.8 (computer communication and data processing) -> interface : Winform App
 * C/C++ (mostly C) on Raspberry Pico
 
 
