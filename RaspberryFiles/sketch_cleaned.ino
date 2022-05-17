@@ -159,11 +159,11 @@ void loop()
 
   if(distance_mm <= current_distance_limit)
   {
-    digitalWrite(GREEN_LED, LOW); //ROUGE
-    digitalWrite(RED_LED, HIGH);  //VERTE
-    digitalWrite(RED_LED, LOW);  //VERTE
+    digitalWrite(GREEN_LED, LOW);
+    digitalWrite(RED_LED, HIGH);  
+    digitalWrite(RED_LED, LOW); 
     delay(20);
-    digitalWrite(11, HIGH);  //VERTE
+    digitalWrite(GREEN_LED, HIGH); 
   }
   else
   {
@@ -201,17 +201,17 @@ void loop()
 
 int send_mm_distance(int mm_distance)
 {
-  byte buffer_return[9];
+  byte buffer_return[5];
   buffer_return[0] = GET_DISTANCE_CAPTED;
   buffer_return[1] = (mm_distance >> 24) & 0xFF;
   buffer_return[2] = (mm_distance >> 16) & 0xFF;
   buffer_return[3] = (mm_distance >> 8) & 0xFF;
   buffer_return[4] = (mm_distance >> 0) & 0xFF;
 
-  Serial.write(buffer_return, 9);
+  Serial.write(buffer_return, 5);
   Serial.flush();  
   
-  return 9;  
+  return 5;  
 }
 
 void set_limit_distance(byte new_distance[4])
