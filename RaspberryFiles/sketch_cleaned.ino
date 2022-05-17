@@ -159,11 +159,11 @@ void loop()
 
   if(distance_mm <= current_distance_limit)
   {
-    digitalWrite(GREEN_LED, LOW);
-    digitalWrite(RED_LED, HIGH);  
-    digitalWrite(RED_LED, LOW); 
+    digitalWrite(GREEN_LED, LOW); //ROUGE
+    digitalWrite(RED_LED, HIGH);  //VERTE
+    digitalWrite(RED_LED, LOW);  //VERTE
     delay(20);
-    digitalWrite(GREEN_LED, HIGH); 
+    digitalWrite(RED_LED, HIGH);  //VERTE 11
   }
   else
   {
